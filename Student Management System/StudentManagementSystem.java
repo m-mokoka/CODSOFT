@@ -15,7 +15,7 @@ public class StudentManagementSystem {
 
                 System.out.print("Enter your choice: ");
                 int choice = scanner.nextInt();
-                scanner.nextLine(); // Consume newline
+                scanner.nextLine(); 
 
                 switch (choice) {
                     case 1:
@@ -23,7 +23,7 @@ public class StudentManagementSystem {
                         String name = scanner.nextLine();
                         System.out.print("Enter roll number: ");
                         int rollNumber = scanner.nextInt();
-                        scanner.nextLine(); // Consume newline
+                        scanner.nextLine();
                         System.out.print("Enter grade: ");
                         String grade = scanner.nextLine();
 
@@ -34,7 +34,7 @@ public class StudentManagementSystem {
                     case 2:
                         System.out.print("Enter roll number to search: ");
                         int searchRollNumber = scanner.nextInt();
-                        scanner.nextLine(); // Consume newline
+                        scanner.nextLine(); 
 
                         Student foundStudent = studentManagement.searchStudent(searchRollNumber);
                         if (foundStudent != null) {

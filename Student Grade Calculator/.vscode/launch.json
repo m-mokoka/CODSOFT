@@ -9,6 +9,13 @@
             "name": "StudentGradeCalculator",
             "request": "launch",
             "mainClass": "StudentGradeCalculator",
+            "projectName": "Student Grade Calculator_8e0ec778"
+        },
+        {
+            "type": "java",
+            "name": "StudentGradeCalculator",
+            "request": "launch",
+            "mainClass": "StudentGradeCalculator",
             "projectName": "SGC_8b751e87"
         },
         {
