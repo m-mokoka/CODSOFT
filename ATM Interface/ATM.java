@@ -1,3 +1,4 @@
+//ATM interface
 import java.util.Scanner;
 
 public class ATM {
@@ -10,13 +11,13 @@ public class ATM {
         System.out.print("Enter PIN: ");
         int pin = scanner.nextInt();
 
-        // Validate user credentials
+        // Validate user credentials (username + pin)
         if (!DummyDatabase.isValidUser(username, pin)) {
             System.out.println("Invalid credentials");
             return;
         }
 
-        BankAccount userAccount = new BankAccount(1000); // Initial balance
+        BankAccount userAccount = new BankAccount(1000); // Initial bank balance
         boolean exit = false;
         while (!exit) {
             System.out.println("\nChoose an option:");

@@ -1,3 +1,4 @@
+//BankAccount class
 public class BankAccount {
     private double balance;
 
