@@ -1,0 +1,199 @@
+/* styles.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #8b7765;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f4bfa1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover, .signup-button {
+    background-color: #f4bfa1;
+    border-radius: 5px;
+}
+
+.hero {
+    padding: 100px 20px;
+    background-color: #e7d3c3;
+    color: #3e2723;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before, .hero::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(45deg);
+}
+
+.hero::before {
+    top: -50px;
+    left: -50px;
+}
+
+.hero::after {
+    bottom: -50px;
+    right: -50px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 48px;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.cta-button {
+    background-color: #8b7765;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #7a6855;
+}
+
+.collections-section, .about-section, .contact-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.collections-section h2, .about-section h2, .contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.collections-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.collection {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.collection h3 {
+    margin-top: 0;
+    color: #8b7765;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section label {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.contact-section input, .contact-section textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-section button {
+    background-color: #8b7765;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-section button:hover {
+    background-color: #7a6855;
+}
+
+footer {
+    background-color: #8b7765;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+footer::before, footer::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(45deg);
+}
+
+footer::before {
+    top: -30px;
+    left: -30px;
+}
+
+footer::after {
+    bottom: -30px;
+    right: -30px;
+}
